@@ -54,9 +54,17 @@
   height: 10%;
   width: 30%;
   top: 60%;
-  left: 36%;
+  left: 34%;
   padding: 20px;
   font-size: 33px;
+}
+
+#falloutdiv {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  left: 78%;
+  top: 20%;
 }
 
 body {

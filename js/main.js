@@ -48,6 +48,9 @@ $(document).ready( function() {
       $('#winnerBanner').show()
     },1000)
     $('#stats').html("Wins: " + wins + "<br />Losses: " + losses + "<br />Draws: " + draws)
+    if ((wins + draws + losses) == 10) {
+      animateImg()
+    }
   }
 
   $('#rockButton').on('click', function() {
@@ -60,6 +63,11 @@ $(document).ready( function() {
     runGame('scissors')
   })
 
+  function animateImg() {
+    var fallOutBoy = document.createElement('img')
+    fallOutBoy.src = "img/fallout.jpg"
+    $('#falloutdiv').append(fallOutBoy)
+  }
 
 
 
